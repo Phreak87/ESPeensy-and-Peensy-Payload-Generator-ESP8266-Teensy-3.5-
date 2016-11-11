@@ -1,0 +1,2 @@
+﻿string-enter start cmd
+repeat 100

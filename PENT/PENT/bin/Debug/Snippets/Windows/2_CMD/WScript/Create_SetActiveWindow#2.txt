@@ -1,0 +1,1 @@
+﻿Set ws = CreateObject("WScript.Shell"): set ar = Wscript.Arguments: ws.appactivate ar(0)

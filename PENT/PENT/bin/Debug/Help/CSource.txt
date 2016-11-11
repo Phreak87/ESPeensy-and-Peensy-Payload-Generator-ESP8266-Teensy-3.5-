@@ -1,0 +1,8 @@
+Comments			-	// Start single line comment
+					-	/* Start multiline comment
+					-	*/ End multiline comment
+			
+Keyboard.print		- prints a string
+Keyboard.set_key1 	- sets a key
+Keyboard.send_now() - sends the key
+unpress_key();		- unpress all keys

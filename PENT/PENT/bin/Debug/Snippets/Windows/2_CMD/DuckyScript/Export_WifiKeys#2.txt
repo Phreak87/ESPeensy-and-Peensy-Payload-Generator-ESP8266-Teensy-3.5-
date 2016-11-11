@@ -1,0 +1,8 @@
+﻿REM #######################
+REM Exportieren aller Wlan 
+REM Konfigurationen. Admin CMD
+REM ist für Klartextkey erforderlich
+REM #######################
+
+STRING-ENTER netsh wlan export profile key=clear
+DELAY 500

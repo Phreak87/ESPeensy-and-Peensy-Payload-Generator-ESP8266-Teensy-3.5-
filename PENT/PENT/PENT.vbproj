@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1D7933A3-7C51-4167-BFA8-93D02A7F0985}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>PENT.My.MyApplication</StartupObject>
+    <RootNamespace>PENT</RootNamespace>
+    <AssemblyName>PENT</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>PENT.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>PENT.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\CreateProject.Designer.vb">
+      <DependentUpon>CreateProject.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CreateProject.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interpreter\Batch.vb" />
+    <Compile Include="Interpreter\Ducky.vb" />
+    <Compile Include="Interpreter\PSScript.vb" />
+    <Compile Include="Interpreter\WScript.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Forms\CreateSnippet.Designer.vb">
+      <DependentUpon>CreateSnippet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CreateSnippet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PENT.Designer.vb">
+      <DependentUpon>PENT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PENT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\CreateProject.resx">
+      <DependentUpon>CreateProject.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CreateSnippet.resx">
+      <DependentUpon>CreateSnippet.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PENT.resx">
+      <DependentUpon>PENT.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddTableHH.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\126_Edit_32x42_72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\305_Close_24x24_72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Move.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\077_AddFile_32x42_72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\base_plus_sign_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\109_AllAnnotations_Error_32x42_72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\48px-Crystal_Clear_action_edit_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\48px-Crystal_Clear_action_edit_remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\48px-Crystal_Clear_action_run.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\64px-Nuvola_apps_cache_2.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\48px-Crystal_Clear_action_editpaste.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\48px-Crystal_Clear_mimetype_applix.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\120px-Bombilla_verde_-_green_Edison_lamp.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\120px-Gnome-view-restore.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\118px-Transfer-left_right.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\120px-Go-down.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\120px-Go-up.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\120px-Nuvola_apps_download_manager.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\120px-Nuvola_apps_download_manager2.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\48px-Crystal_Clear_filesystem_folder_blue.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

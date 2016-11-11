@@ -1,0 +1,2 @@
+﻿STRING-ENTER Exit
+Delay 1000

@@ -1,0 +1,12 @@
+﻿REM ############################
+REM Ordner PL auf Desktop erstellen und
+REM EXP für Exports
+REM SCR für Scripts
+REM DL für Downloads
+REM ############################
+
+mkdir %USERPROFILE%\Desktop\PL 
+cd %USERPROFILE%\Desktop\PL 
+mkdir %USERPROFILE%\Desktop\PL\EXP
+mkdir %USERPROFILE%\Desktop\PL\SCR
+mkdir %USERPROFILE%\Desktop\PL\DL

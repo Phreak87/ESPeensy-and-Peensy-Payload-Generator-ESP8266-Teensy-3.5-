@@ -1,0 +1,7 @@
+void unpress_key(void)
+{
+  Keyboard.set_modifier(0);
+  Keyboard.set_key1(0);
+  Keyboard.send_now();
+  delay(500);
+}

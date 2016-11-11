@@ -1,0 +1,16 @@
+﻿STRING-ENTER      _____           _____
+STRING-ENTER   ,ad8PPPP88b,     ,d88PPPP8ba,
+STRING-ENTER  d8P"      "Y8b, ,d8P"      "Y8b
+STRING-ENTER dP'           "8a8"           `Yd
+STRING-ENTER 8(              "              )8
+STRING-ENTER I8                             8I
+STRING-ENTER  Yb,                         ,dP
+STRING-ENTER   "8a,                     ,a8"
+STRING-ENTER     "8a,                 ,a8"
+STRING-ENTER       "Yba             adP"
+STRING-ENTER         `Y8a         a8P'
+STRING-ENTER           `88,     ,88'
+STRING-ENTER             "8b   d8"
+STRING-ENTER              "8b d8"
+STRING-ENTER               `888'
+STRING-ENTER                 "

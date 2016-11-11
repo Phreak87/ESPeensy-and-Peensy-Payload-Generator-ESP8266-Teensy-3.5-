@@ -1,0 +1,14 @@
+void wait_for_drivers(unsigned int speed)
+{
+  bool numLockTrap = is_num_on();
+  while(numLockTrap == is_num_on())
+  {
+    blink_fast(5,80);
+    press_numlock();
+    unpress_key();
+    delay(speed);
+  }
+  press_numlock();
+  unpress_key();
+  delay(speed);
+}

@@ -1,0 +1,9 @@
+﻿// ############################
+// Creates a Zip File from PL/Exp
+// Saves to PL\A.Zip
+// Requires Hidden Environment
+// ############################
+
+Keyboard.print ("cd %USERPROFILE%\\Desktop\\pl\\scr\\ & cscript zip.vbs \"%USERPROFILE%\\Desktop\\pl\\exp\" \"%USERPROFILE%\\Desktop\\pl\\A.zip\"");
+Keyboard.set_key1(KEY_ENTER);Keyboard.send_now();unpress_key();
+delay (1000);

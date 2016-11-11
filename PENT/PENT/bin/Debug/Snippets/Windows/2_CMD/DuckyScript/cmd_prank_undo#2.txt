@@ -1,0 +1,2 @@
+﻿string-enter exit
+repeat 100

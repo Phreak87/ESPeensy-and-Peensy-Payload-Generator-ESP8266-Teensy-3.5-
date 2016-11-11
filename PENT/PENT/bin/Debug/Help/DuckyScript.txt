@@ -1,0 +1,21 @@
+ALT
+CTRL
+CONTROL
+SHIFT
+WINDOWS
+MENU
+ENTER
+ALT-SHIFT
+CTRL-ALT
+CTRL-SHIFT
+DEFAULT_DELAY
+DEFAULTDELAY
+DELAY 		(Delay in ms) [time in ms]
+COMMAND 
+GUI
+REM          (comment)
+HOLDFOR
+REPEAT       (repeats last line) [count]
+STRING       (types a string)
+STRING-ENTER (types a string and press enter)
+DOWNARROW    (press key down and hold for) [optional time in ms]

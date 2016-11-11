@@ -1,0 +1,12 @@
+﻿// ###############
+// hosted-ap
+// ###############
+
+Keyboard.print ("netsh wlan set hostednetwork mode=allow ssid=FrustBox7490 key=Peensy3.5!");
+Keyboard.set_key1(KEY_ENTER);Keyboard.send_now();unpress_key();
+
+Keyboard.print ("netsh wlan start hostednetwork");
+Keyboard.set_key1(KEY_ENTER);Keyboard.send_now();unpress_key();
+
+Keyboard.print ("echo ssid=FrustBox7490 key=Peensy3.5! >> HostedAP.txt");
+Keyboard.set_key1(KEY_ENTER);Keyboard.send_now();unpress_key();

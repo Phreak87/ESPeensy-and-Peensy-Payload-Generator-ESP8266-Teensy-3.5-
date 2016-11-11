@@ -1,0 +1,6 @@
+﻿REM #######################
+REM Windows Desktop anzeigen
+REM #######################
+
+WINDOWS D
+DELAY 1000

@@ -1,0 +1,7 @@
+﻿REM #######################
+REM Verlassen der CMD und 
+REM zurück zu 1_GUI
+REM #######################
+
+STRING-ENTER Exit
+DELAY 500

@@ -1,0 +1,6 @@
+﻿REM #######################
+REM Exportieren der Netzwerk-
+REM Konfiguration zu IPC.txt
+REM #######################
+
+STRING-ENTER Ipconfig /all > IPC.txt

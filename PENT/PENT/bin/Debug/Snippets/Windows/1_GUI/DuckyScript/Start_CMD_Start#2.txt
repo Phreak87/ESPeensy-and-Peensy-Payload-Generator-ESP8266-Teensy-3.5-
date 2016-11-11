@@ -1,0 +1,10 @@
+﻿REM #######################
+REM Starte CMD Startmenue
+REM #######################
+
+WINDOWS
+DELAY 500
+STRING CMD
+DELAY 500
+ENTER
+DELAY 1000

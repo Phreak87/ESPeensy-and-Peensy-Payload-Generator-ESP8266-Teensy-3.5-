@@ -1,0 +1,1 @@
+﻿Set ws = CreateObject("WScript.Shell"): ws.SendKeys "{NUMLOCK}"	

@@ -1,0 +1,10 @@
+﻿REM #######################
+REM Starte CMD mit Ausführen
+REM #######################
+
+WINDOWS R
+DELAY 500
+STRING notepad
+DELAY 500
+ENTER
+DELAY 1000

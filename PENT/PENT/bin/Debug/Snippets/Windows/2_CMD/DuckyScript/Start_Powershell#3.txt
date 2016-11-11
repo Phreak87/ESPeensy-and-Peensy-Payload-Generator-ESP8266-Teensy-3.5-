@@ -1,0 +1,7 @@
+﻿REM #######################
+REM Starte die Powershell und 
+REM wechsle den Modus
+REM #######################
+
+STRING-ENTER powershell
+DELAY 1000

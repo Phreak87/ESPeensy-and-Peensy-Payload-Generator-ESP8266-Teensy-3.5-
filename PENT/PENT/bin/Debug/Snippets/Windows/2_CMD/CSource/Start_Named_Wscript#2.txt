@@ -1,0 +1,4 @@
+﻿void Start_Named_Wscript(string Fileame) {
+Keyboard.print ("CScript " + Filename)
+Keyboard.set_key1(KEY_ENTER);Keyboard.send_now();unpress_key();
+}

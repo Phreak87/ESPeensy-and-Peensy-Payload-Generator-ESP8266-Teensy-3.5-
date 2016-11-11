@@ -1,0 +1,13 @@
+﻿REM #######################
+REM Starte Powershell als
+REM Administrator
+REM #######################
+
+WINDOWS
+ENTER
+STRING powershell
+DELAY 500
+CTRL-SHIFT ENTER
+DELAY 1000
+ALT J
+DELAY 1000

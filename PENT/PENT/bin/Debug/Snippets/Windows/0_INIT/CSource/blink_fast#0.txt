@@ -1,0 +1,11 @@
+﻿void blink_fast(int blinkrate,int delaytime)
+{
+	int blinkcounter=0;
+	for(blinkcounter=0; blinkcounter!=blinkrate; blinkcounter++)
+	{
+		digitalWrite(led_pin, HIGH);
+		delay(delaytime);
+		digitalWrite(led_pin, LOW);
+		delay(delaytime);
+	}
+}

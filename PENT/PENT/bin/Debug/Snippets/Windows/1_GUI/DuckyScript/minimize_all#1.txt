@@ -1,0 +1,6 @@
+﻿REM #######################
+REM Alle Fenster Minimieren
+REM #######################
+
+WINDOWS M
+DELAY 1000

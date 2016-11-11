@@ -1,0 +1,8 @@
+﻿REM #######################
+REM Starte CMD aus Lockscreen oder
+REM Windows. Erfordert vorherige
+REM einrichtung durch BypassLogon
+REM #######################
+
+SHIFT
+REPEAT 5

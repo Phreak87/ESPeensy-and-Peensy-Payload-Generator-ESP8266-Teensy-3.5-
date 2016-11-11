@@ -1,0 +1,5 @@
+mkdir 	- erstellt verzeichnisse
+attrib 	- setzt attribute (+h = Hidden)
+rmdir	- löscht verzeichnisse
+
+REM 	- Kommentar

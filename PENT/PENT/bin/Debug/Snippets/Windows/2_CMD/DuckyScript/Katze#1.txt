@@ -1,0 +1,90 @@
+﻿STRING-ENTER                           9$$                                                  
+STRING-ENTER                           M$$$>                                                
+STRING-ENTER                           '$$$$&                                               
+STRING-ENTER                            $$$$$B                                              
+STRING-ENTER                            $$$$$$$.                                            
+STRING-ENTER                           :$$$$$$$$k                                           
+STRING-ENTER $$$:                      X$$$$$$$$$N..:dN                                     
+STRING-ENTER 9$$$$W                    @$$$$$$$$$$$$$$$>                                    
+STRING-ENTER  R$$$$$$W              'W$$$$$$$$$R```"R$$$N>                                  
+STRING-ENTER   R$$$$$$$$$b.       d$$$$$$$$$$$$>     . ^*$$k                                
+STRING-ENTER    R$$$$$$$$$$$$u  x$$$$****$$$$$$&    4$$N.'*$$L                              
+STRING-ENTER     4$$$$$$$$$$$$$$$$"        '"*$$B   '$$$$K.'R$K                             
+STRING-ENTER      '$$$$$$$$$$$$R         :@NW  `$$x  '#$$$$k `$B                            
+STRING-ENTER       '$$$$$$$$$$~          X$$$$N  '$N    M$$E  ?$N.uebc                      
+STRING-ENTER        '$$$$$$$$>            $$$$$$    Rk    '  .W$$$$$$$$&                    
+STRING-ENTER         M$$$$$$R             '$$$$$$L   #N    x@$$$$$$$$$$$$>                  
+STRING-ENTER         '$$$$$$~                 $$$$L      d$$$$$$$$$$$$$$$E                  
+STRING-ENTER          4$$$$$                  9$$$E     W$$$$$$$$$$$$$$$$E                  
+STRING-ENTER          '$$$$$>                  '#$"  :$$$$$$$$$$$$$$$$$$$                   
+STRING-ENTER           9$$$$B                        $$$$$$$$$$$$$$$$$$R                    
+STRING-ENTER           X$$$$$$u                    d$"M$$$$$$$$$$$$$$$R                     
+STRING-ENTER           "$$$$$$$$u                d$#  '$$$$$$$$$$$$$$"                      
+STRING-ENTER           X$$$$$$$$$$$e..     ..ud$*"     '$$$$$$$$$$$)..uoe@$$$               
+STRING-ENTER           X$$$$$$$$$$$$$$$$$**F"~                 '$$RF"""""~                  
+STRING-ENTER           9$$$$$$$$$$$F``                         W$&......x:.                 
+STRING-ENTER          J$$$$$$$$$$"                            9$$$****$$$$*                 
+STRING-ENTER         '$$**$$$$$$                             W$$                            
+STRING-ENTER              '$$$$&                    :$>    d$$$$$$:                         
+STRING-ENTER          :xd@$F"`#$$W:                ##"  d$$$$$$$$$$$$Wu.                    
+STRING-ENTER     :d@$$$""     xW$$$$$$Wx>         xuW$$$$$$$$$$$$$$$$$$$$$W>                
+STRING-ENTER   '$$$*"     .d$$*"     ""#*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$                
+STRING-ENTER          xe$$*"          .uoe$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$>               
+STRING-ENTER       :W$$*F         x@$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$                
+STRING-ENTER       '`          x@$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$k                
+STRING-ENTER                 :@$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$>               
+STRING-ENTER                 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$&               
+STRING-ENTER                 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$               
+STRING-ENTER                  "R$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$              :
+STRING-ENTER                    ?$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$E             W$
+STRING-ENTER                    '$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$F           :$$$
+STRING-ENTER                    '$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$E            $$$$
+STRING-ENTER                      `*$$R``#R$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$          :$$$$$
+STRING-ENTER                             so$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$N       :@$$$$$$
+STRING-ENTER                             d$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$Nu. x$$$$$$$$$
+STRING-ENTER                            '$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+STRING-ENTER                            X$$$$$$$$$$$$$"R$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+STRING-ENTER                       .WWW@$$$$$$$$$$$$$E  )$$$$$$$$$$$$*$$$$$$$$$$$$$$$$$$$$$$
+STRING-ENTER                    .W$$$$$$$$$$$$$$$$$$$E  $$$$$$$$$$$$$ #$$$$$$$$$$$$$$$$$$$$$
+STRING-ENTER                   :$$$$$$$$$$$$$$$$$$$$$$::$$$$$$$$$$$$$k 'R$$$$$$$$$$$$$$$$$$R
+STRING-ENTER                  :$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$k: `R$$$$$$$$$$$$$$#  
+STRING-ENTER                  "$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$k '"R$$$$$$$R"`    
+STRING-ENTER                   M$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$>                
+STRING-ENTER                 'R$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$&                
+STRING-ENTER                   `#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$E                
+STRING-ENTER                      `#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$R                 
+STRING-ENTER                              #$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*                   
+STRING-ENTER                                 "$$$$$$$$$$$$$$$$$$$$$$$"                      
+STRING-ENTER                                  '`$$$$$$$$$$$$$$$*F"` Margaret Chatfield
+STRING-ENTER 
+STRING-ENTER 
+STRING-ENTER 
+STRING-ENTER                                                                         
+STRING-ENTER                         b                         .$                    
+STRING-ENTER                         4r                       .$$                    
+STRING-ENTER                         4$r                     z$$$                    
+STRING-ENTER                         $$$c                   d. $$                    
+STRING-ENTER                         $$d$$c.eeeeePeee..   z"4-'P$                    
+STRING-ENTER                        J$$$$$dP3"""*$*$$ee$$$$$ " $$F                   
+STRING-ENTER                       z$*.P*$ "- .="         '\  $$$$                   
+STRING-ENTER                     .P    'F" *e"               \/$$$                   
+STRING-ENTER                     "      4  ^                  ^ $$b                  
+STRING-ENTER                            4$%                    ^$$$r                 
+STRING-ENTER                             F                      4$$$                 
+STRING-ENTER                            4                        $$$b                
+STRING-ENTER                 .    4$b   P           .ec          $$$$b               
+STRING-ENTER                      $"               4$P""         $$$$$$c             
+STRING-ENTER                ^    4$$$r 4"          4$eec        4$$$$P"*$e           
+STRING-ENTER      \         .     $$$   4          ^$$$F        $$$$$E.zd$$$"        
+STRING-ENTER       ^\       F            r                     d$$P"  *$$$P .^       
+STRING-ENTER          -.    .        %   ^.                   J$P      $$F.      /   
+STRING-ENTER               "$\    .z.      -                 $P" ^    .P      .^     
+STRING-ENTER                   ""3$$$$$$e    ".           .d"     ^   $F  -"         
+STRING-ENTER                 ^   $$$$$$$$L       ^""=="""""      /   ^               
+STRING-ENTER                  -  3$ee= "$"                      /  ."                
+STRING-ENTER                   ^. ^****"                      z"  ^                  
+STRING-ENTER                                                z"  /                    
+STRING-ENTER                       -.                   .e$"  =                      
+STRING-ENTER                         ^ ec..... ....ee$$*"  .^                        
+STRING-ENTER                          ".  """**"""     .=^                           
+STRING-ENTER                               "  === """                                
