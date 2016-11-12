@@ -77,6 +77,7 @@
         NewITEM.SubItems.Add(TSPLIT(3))
         NewITEM.SubItems.Add(matchRes.Groups(1).Value)
         NewITEM.SubItems.Add(Parm)
+        NewITEM.SubItems.Add("")
         ListView1.Items.Add(NewITEM)
 
         UpdateState(matchRes.Groups(1).Value)
@@ -192,14 +193,25 @@
         ' ----------------------------------------------------------
         ' Funktionsaufrufe
         ' ----------------------------------------------------------
+
         Out.AppendLine("void setup (void){")
         For Each eintrag As ListViewItem In ListView1.Items
+            Dim PreCond As String = ""
+            If eintrag.SubItems.Count = 7 Then
+                If IsNumeric(eintrag.SubItems(6).Text) Then PreCond = eintrag.SubItems(6).Text
+            End If
+
             Dim SName As String = eintrag.SubItems(3).Text
             Dim SType As String = eintrag.SubItems(2).Text
             Dim Parm As String = eintrag.SubItems(5).Text
             Select Case SType
                 Case "RAW" : Out.AppendLine(vbTab & SName)
-                Case Else : Out.AppendLine(vbTab & ModifyName(SName) & "(" & IIf(Parm = "", "", Parm) & ");")
+                Case Else
+                    If PreCond = "" Then
+                        Out.AppendLine(vbTab & ModifyName(SName) & "(" & IIf(Parm = "", "", Parm) & ");")
+                    Else
+                        Out.AppendLine(vbTab & "if (summe == " & PreCond & "){" & ModifyName(SName) & "(" & IIf(Parm = "", "", Parm) & ");" & "}")
+                    End If
             End Select
         Next
         Out.AppendLine("}")
@@ -221,6 +233,8 @@
                     If My.Computer.FileSystem.FileExists(FilePath) = False Then MsgBox("Die Datei " & FilePath & " wurde nicht gefunden") : Continue For
                     FileCont = My.Computer.FileSystem.ReadAllText(FilePath)
                 End If
+
+
 
                 Select Case SType
                     Case "CSource"
@@ -410,5 +424,12 @@
     Private Sub ToolStripButton11_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ToolStripButton11.Click
         If ListView1.SelectedItems.Count = 0 Then Exit Sub
         ListView1.SelectedItems(0).SubItems(5).Text = InputBox("Parameter", , ListView1.SelectedItems(0).SubItems(5).Text)
+    End Sub
+
+    Private Sub ToolStripButton12_Click(sender As System.Object, e As System.EventArgs) Handles ToolStripButton12.Click
+        If ListView1.SelectedItems.Count = 0 Then Exit Sub
+        If ListView1.SelectedItems(0).SubItems.Count < 7 Then Exit Sub
+        Dim n As New SwitchSelect(ListView1.SelectedItems(0).SubItems(6).Text) : n.ShowDialog()
+        ListView1.SelectedItems(0).SubItems(6).Text = n.Ret
     End Sub
 End Class

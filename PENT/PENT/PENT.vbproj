@@ -78,6 +78,12 @@
     <Compile Include="Forms\CreateProject.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Forms\SwitchSelect.Designer.vb">
+      <DependentUpon>SwitchSelect.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SwitchSelect.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Interpreter\Batch.vb" />
     <Compile Include="Interpreter\Ducky.vb" />
     <Compile Include="Interpreter\PSScript.vb" />
@@ -113,6 +119,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Forms\CreateProject.resx">
       <DependentUpon>CreateProject.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SwitchSelect.resx">
+      <DependentUpon>SwitchSelect.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

@@ -1,0 +1,16 @@
+void taster()
+  {
+    int val;
+    int s = analogRead(3);
+    int t = analogRead(2);
+    int u = analogRead(1);
+    int v = analogRead(0);
+    int tasten[4];
+
+    if (s == 1){tasten[0] = 1;}else{tasten[0] = 0;}
+    if (t == 1){tasten[1] = 1;}else{tasten[1] = 0;}
+    if (u == 1){tasten[2] = 1;}else{tasten[2] = 0;}
+    if (v == 1){tasten[3] = 1;}else{tasten[3] = 0;}
+    summe = tasten[0]*1 + tasten[1]*2 + tasten[2]*4 + tasten[3]*8;
+    // Serial.print (String(summe) + "\n");
+  } 

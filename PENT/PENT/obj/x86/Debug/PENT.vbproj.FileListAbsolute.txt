@@ -73,3 +73,15 @@ C:\Users\Phreak\Desktop\Peensy PayloadGen\trunk\PENT\PENT\obj\x86\Debug\PENT.Res
 C:\Users\Phreak\Desktop\Peensy PayloadGen\trunk\PENT\PENT\obj\x86\Debug\PENT.CreateSnippet.resources
 C:\Users\Phreak\Desktop\Peensy PayloadGen\trunk\PENT\PENT\obj\x86\Debug\PENT.PENT.resources
 C:\Users\Phreak\Desktop\Peensy PayloadGen\trunk\PENT\PENT\obj\x86\Debug\PENT.vbproj.GenerateResource.Cache
+C:\Users\Phreak\Desktop\TPG\trunk\PENT\PENT\obj\x86\Debug\PENT.exe
+C:\Users\Phreak\Desktop\TPG\trunk\PENT\PENT\obj\x86\Debug\PENT.xml
+C:\Users\Phreak\Desktop\TPG\trunk\PENT\PENT\obj\x86\Debug\PENT.pdb
+C:\Users\Phreak\Desktop\TPG\trunk\PENT\PENT\bin\Debug\PENT.exe
+C:\Users\Phreak\Desktop\TPG\trunk\PENT\PENT\bin\Debug\PENT.pdb
+C:\Users\Phreak\Desktop\TPG\trunk\PENT\PENT\bin\Debug\PENT.xml
+C:\Users\Phreak\Desktop\TPG\trunk\PENT\PENT\obj\x86\Debug\PENT.CreatePRJ.resources
+C:\Users\Phreak\Desktop\TPG\trunk\PENT\PENT\obj\x86\Debug\PENT.Resources.resources
+C:\Users\Phreak\Desktop\TPG\trunk\PENT\PENT\obj\x86\Debug\PENT.CreateSnippet.resources
+C:\Users\Phreak\Desktop\TPG\trunk\PENT\PENT\obj\x86\Debug\PENT.PENT.resources
+C:\Users\Phreak\Desktop\TPG\trunk\PENT\PENT\obj\x86\Debug\PENT.vbproj.GenerateResource.Cache
+C:\Users\Phreak\Desktop\TPG\trunk\PENT\PENT\obj\x86\Debug\PENT.SwitchSelect.resources
