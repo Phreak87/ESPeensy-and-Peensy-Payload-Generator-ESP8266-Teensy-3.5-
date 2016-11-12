@@ -44,11 +44,13 @@ Partial Class CreatePRJ
         Me.PName = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.LevelNew = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.Parameter = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader1 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ToolStrip2 = New System.Windows.Forms.ToolStrip()
         Me.ToolStripButton8 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripButton9 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripButton11 = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripButton12 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripContainer5 = New System.Windows.Forms.ToolStripContainer()
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.ToolStrip4 = New System.Windows.Forms.ToolStrip()
@@ -62,8 +64,6 @@ Partial Class CreatePRJ
         Me.ToolStripTextBox1 = New System.Windows.Forms.ToolStripTextBox()
         Me.ToolStripComboBox1 = New System.Windows.Forms.ToolStripComboBox()
         Me.CBO_STATE = New System.Windows.Forms.ToolStripComboBox()
-        Me.ColumnHeader1 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ToolStripButton12 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripContainer1.ContentPanel.SuspendLayout()
         Me.ToolStripContainer1.TopToolStripPanel.SuspendLayout()
         Me.ToolStripContainer1.SuspendLayout()
@@ -304,6 +304,10 @@ Partial Class CreatePRJ
         Me.Parameter.Text = "Parameter"
         Me.Parameter.Width = 93
         '
+        'ColumnHeader1
+        '
+        Me.ColumnHeader1.Text = "SwitchNum"
+        '
         'ToolStrip2
         '
         Me.ToolStrip2.Dock = System.Windows.Forms.DockStyle.None
@@ -347,6 +351,14 @@ Partial Class CreatePRJ
         Me.ToolStripButton11.Name = "ToolStripButton11"
         Me.ToolStripButton11.Size = New System.Drawing.Size(140, 22)
         Me.ToolStripButton11.Text = "Parameter bearbeiten"
+        '
+        'ToolStripButton12
+        '
+        Me.ToolStripButton12.Image = Global.PENT.My.Resources.Resources._48px_Crystal_Clear_action_run_svg
+        Me.ToolStripButton12.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripButton12.Name = "ToolStripButton12"
+        Me.ToolStripButton12.Size = New System.Drawing.Size(140, 22)
+        Me.ToolStripButton12.Text = "Switch Nr. bearbeiten"
         '
         'ToolStripContainer5
         '
@@ -474,18 +486,6 @@ Partial Class CreatePRJ
         Me.CBO_STATE.Name = "CBO_STATE"
         Me.CBO_STATE.Size = New System.Drawing.Size(121, 25)
         Me.CBO_STATE.Text = "0_INIT"
-        '
-        'ColumnHeader1
-        '
-        Me.ColumnHeader1.Text = "SwitchNum"
-        '
-        'ToolStripButton12
-        '
-        Me.ToolStripButton12.Image = CType(resources.GetObject("ToolStripButton12.Image"), System.Drawing.Image)
-        Me.ToolStripButton12.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ToolStripButton12.Name = "ToolStripButton12"
-        Me.ToolStripButton12.Size = New System.Drawing.Size(140, 22)
-        Me.ToolStripButton12.Text = "Switch Nr. bearbeiten"
         '
         'CreatePRJ
         '

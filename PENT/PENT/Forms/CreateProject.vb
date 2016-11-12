@@ -17,7 +17,8 @@
             LVIT.SubItems.Add(Splitter(2))
             LVIT.SubItems.Add(Splitter(3))
             LVIT.SubItems.Add(Splitter(4))
-            LVIT.SubItems.Add(Splitter(5))
+            LVIT.SubItems.Add(Splitter(5))  ' parameter
+            LVIT.SubItems.Add(Splitter(6))           ' SwitchSel
             ListView1.Items.Add(LVIT)
             UpdateState(Splitter(4))
         Next
@@ -305,7 +306,8 @@
                               eintrag.subitems(2).text & vbTab & _
                               eintrag.subitems(3).text & vbTab &
                               eintrag.subitems(4).text & vbTab & _
-                              eintrag.subitems(5).text)
+                              eintrag.subitems(5).text & vbTab & _
+                              eintrag.subitems(6).text)
         Next
         My.Computer.FileSystem.WriteAllText("Projects\" & PROJName & ".txt", Struct.ToString, False)
     End Sub
