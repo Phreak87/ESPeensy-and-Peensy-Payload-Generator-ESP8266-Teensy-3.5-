@@ -17,8 +17,8 @@
             LVIT.SubItems.Add(Splitter(2))
             LVIT.SubItems.Add(Splitter(3))
             LVIT.SubItems.Add(Splitter(4))
-            LVIT.SubItems.Add(Splitter(5))  ' parameter
-            LVIT.SubItems.Add(Splitter(6))           ' SwitchSel
+            LVIT.SubItems.Add(Splitter(5))  ' Parameter
+            LVIT.SubItems.Add(Splitter(6))  ' SwitchSel
             ListView1.Items.Add(LVIT)
             UpdateState(Splitter(4))
         Next
@@ -63,10 +63,11 @@
         If TSPLIT(2) = "CSource" Then
             Dim CCont As String = My.Computer.FileSystem.ReadAllText("Snippets\" & TreeView1.SelectedNode.FullPath)
             Dim CContL0 As String = Split(CCont, vbLf)(0)
-            Dim CFuncts As System.Text.RegularExpressions.Match = System.Text.RegularExpressions.Regex.Match(CContL0, "void ([a-zA-Z_]*)\((.*?)\)")
+            Dim CFuncts As System.Text.RegularExpressions.Match = System.Text.RegularExpressions.Regex.Match(CContL0, "void ([a-zA-Z_]*)[ ]?\((.*?)\)")
             If CFuncts.Groups(2).Value <> "" Then
                 For Each eintrag In Split(CFuncts.Groups(2).Value, ",")
-                    Parm = Parm & InputBox(eintrag, "Bitte Parameter eingeben:") & ","
+                    If eintrag.ToLower.Contains("string") Then Parm = Parm & Chr(34) & InputBox(eintrag, "Bitte Parameter eingeben:") & Chr(34) & ","
+                    If eintrag.ToLower.Contains("int") Then Parm = Parm & InputBox(eintrag, "Bitte Parameter eingeben:") & ","
                 Next
                 Parm = Parm.Remove(Parm.Length - 1)
             End If
@@ -197,23 +198,24 @@
 
         Out.AppendLine("void setup (void){")
         For Each eintrag As ListViewItem In ListView1.Items
-            Dim PreCond As String = ""
-            If eintrag.SubItems.Count = 7 Then
-                If IsNumeric(eintrag.SubItems(6).Text) Then PreCond = eintrag.SubItems(6).Text
-            End If
 
             Dim SName As String = eintrag.SubItems(3).Text
             Dim SType As String = eintrag.SubItems(2).Text
             Dim Parm As String = eintrag.SubItems(5).Text
-            Select Case SType
-                Case "RAW" : Out.AppendLine(vbTab & SName)
-                Case Else
-                    If PreCond = "" Then
-                        Out.AppendLine(vbTab & ModifyName(SName) & "(" & IIf(Parm = "", "", Parm) & ");")
-                    Else
-                        Out.AppendLine(vbTab & "if (summe == " & PreCond & "){" & ModifyName(SName) & "(" & IIf(Parm = "", "", Parm) & ");" & "}")
-                    End If
-            End Select
+
+            Dim PreCond As String = eintrag.SubItems(6).Text
+            Dim AftCond As String = ""
+            Dim RetCond As String = ""
+
+            If SType = "RAW" Then RetCond = (SName)
+            If SType <> "RAW" Then RetCond = ModifyName(SName) & "(" & IIf(Parm = "", "", Parm) & ");"
+
+            If PreCond.StartsWith("A") Then PreCond = "if (analogRead(" & Mid(PreCond, 2) - 1 & ") == 1){" : AftCond = "}"
+            If PreCond.StartsWith("B") Then PreCond = "if (summe == " & Mid(PreCond, 2) & "){" : AftCond = "}"
+            If PreCond.StartsWith("if") = False Then PreCond = "" : AftCond = ""
+
+            Out.AppendLine(vbTab & PreCond & RetCond & AftCond)
+
         Next
         Out.AppendLine("}")
 
@@ -234,8 +236,6 @@
                     If My.Computer.FileSystem.FileExists(FilePath) = False Then MsgBox("Die Datei " & FilePath & " wurde nicht gefunden") : Continue For
                     FileCont = My.Computer.FileSystem.ReadAllText(FilePath)
                 End If
-
-
 
                 Select Case SType
                     Case "CSource"
@@ -290,6 +290,7 @@
         LVIT.SubItems.Add(CBO_STATE.Text)
         LVIT.SubItems.Add("RAW")
         LVIT.SubItems.Add(InputBox("Bitte Ruhdaten für die Setuproutine eingeben"))
+        LVIT.SubItems.Add("")
         LVIT.SubItems.Add("")
         LVIT.SubItems.Add("")
         ListView1.Items.Add(LVIT)

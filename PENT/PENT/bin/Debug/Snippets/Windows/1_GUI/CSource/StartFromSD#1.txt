@@ -1,0 +1,17 @@
+﻿void StartFromSD (String Filename){
+    File myFile;
+    String line;
+    // Serial.println ("Init SD");
+    if (SD.begin(BUILTIN_SDCARD)) {
+      if (SD.exists(Filename)) {
+        myFile = SD.open(Filename);
+          if (myFile) {
+            while (myFile.available()) {
+              line = myFile.readStringUntil('\n');
+              RunDuckyLine (line);
+            }
+            myFile.close();
+          }
+      }
+  }
+}

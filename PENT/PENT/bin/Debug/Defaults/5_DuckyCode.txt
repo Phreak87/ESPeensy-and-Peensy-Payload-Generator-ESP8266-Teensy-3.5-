@@ -1,0 +1,11 @@
+void RunDuckyLine (String line){
+	if (line.startsWith("STRING-ENTER") == true){
+		Keyboard.print (line.substring(13));
+		Keyboard.set_key1(KEY_ENTER);
+		Keyboard.send_now();
+		unpress_key();
+	}
+	if (line.startsWith("STRING") == true){
+		Keyboard.print (line.substring(7));
+	}
+}

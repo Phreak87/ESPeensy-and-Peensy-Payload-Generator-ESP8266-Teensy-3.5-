@@ -85,3 +85,4 @@ C:\Users\Phreak\Desktop\TPG\trunk\PENT\PENT\obj\x86\Debug\PENT.CreateSnippet.res
 C:\Users\Phreak\Desktop\TPG\trunk\PENT\PENT\obj\x86\Debug\PENT.PENT.resources
 C:\Users\Phreak\Desktop\TPG\trunk\PENT\PENT\obj\x86\Debug\PENT.vbproj.GenerateResource.Cache
 C:\Users\Phreak\Desktop\TPG\trunk\PENT\PENT\obj\x86\Debug\PENT.SwitchSelect.resources
+F:\TPG\trunk\PENT\PENT\obj\x86\Debug\PENT.SwitchSelect.resources

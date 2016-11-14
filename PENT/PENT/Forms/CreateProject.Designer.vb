@@ -98,11 +98,11 @@ Partial Class CreatePRJ
         'ToolStripContainer1.ContentPanel
         '
         Me.ToolStripContainer1.ContentPanel.Controls.Add(Me.SplitContainer2)
-        Me.ToolStripContainer1.ContentPanel.Size = New System.Drawing.Size(935, 474)
+        Me.ToolStripContainer1.ContentPanel.Size = New System.Drawing.Size(1015, 623)
         Me.ToolStripContainer1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ToolStripContainer1.Location = New System.Drawing.Point(0, 0)
         Me.ToolStripContainer1.Name = "ToolStripContainer1"
-        Me.ToolStripContainer1.Size = New System.Drawing.Size(935, 499)
+        Me.ToolStripContainer1.Size = New System.Drawing.Size(1015, 648)
         Me.ToolStripContainer1.TabIndex = 0
         Me.ToolStripContainer1.Text = "ToolStripContainer1"
         '
@@ -124,8 +124,8 @@ Partial Class CreatePRJ
         'SplitContainer2.Panel2
         '
         Me.SplitContainer2.Panel2.Controls.Add(Me.ToolStripContainer5)
-        Me.SplitContainer2.Size = New System.Drawing.Size(935, 474)
-        Me.SplitContainer2.SplitterDistance = 304
+        Me.SplitContainer2.Size = New System.Drawing.Size(1015, 623)
+        Me.SplitContainer2.SplitterDistance = 399
         Me.SplitContainer2.TabIndex = 1
         '
         'SplitContainer1
@@ -141,8 +141,8 @@ Partial Class CreatePRJ
         'SplitContainer1.Panel2
         '
         Me.SplitContainer1.Panel2.Controls.Add(Me.ToolStripContainer2)
-        Me.SplitContainer1.Size = New System.Drawing.Size(935, 304)
-        Me.SplitContainer1.SplitterDistance = 320
+        Me.SplitContainer1.Size = New System.Drawing.Size(1015, 399)
+        Me.SplitContainer1.SplitterDistance = 337
         Me.SplitContainer1.TabIndex = 0
         '
         'ToolStripContainer3
@@ -151,11 +151,11 @@ Partial Class CreatePRJ
         'ToolStripContainer3.ContentPanel
         '
         Me.ToolStripContainer3.ContentPanel.Controls.Add(Me.TreeView1)
-        Me.ToolStripContainer3.ContentPanel.Size = New System.Drawing.Size(320, 279)
+        Me.ToolStripContainer3.ContentPanel.Size = New System.Drawing.Size(337, 374)
         Me.ToolStripContainer3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ToolStripContainer3.Location = New System.Drawing.Point(0, 0)
         Me.ToolStripContainer3.Name = "ToolStripContainer3"
-        Me.ToolStripContainer3.Size = New System.Drawing.Size(320, 304)
+        Me.ToolStripContainer3.Size = New System.Drawing.Size(337, 399)
         Me.ToolStripContainer3.TabIndex = 1
         Me.ToolStripContainer3.Text = "ToolStripContainer3"
         '
@@ -165,10 +165,11 @@ Partial Class CreatePRJ
         '
         'TreeView1
         '
+        Me.TreeView1.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.TreeView1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TreeView1.Location = New System.Drawing.Point(0, 0)
         Me.TreeView1.Name = "TreeView1"
-        Me.TreeView1.Size = New System.Drawing.Size(320, 279)
+        Me.TreeView1.Size = New System.Drawing.Size(337, 374)
         Me.TreeView1.TabIndex = 1
         '
         'ToolStrip3
@@ -179,7 +180,7 @@ Partial Class CreatePRJ
         Me.ToolStrip3.Location = New System.Drawing.Point(0, 0)
         Me.ToolStrip3.Name = "ToolStrip3"
         Me.ToolStrip3.RenderMode = System.Windows.Forms.ToolStripRenderMode.System
-        Me.ToolStrip3.Size = New System.Drawing.Size(320, 25)
+        Me.ToolStrip3.Size = New System.Drawing.Size(337, 25)
         Me.ToolStrip3.Stretch = True
         Me.ToolStrip3.TabIndex = 1
         '
@@ -188,7 +189,7 @@ Partial Class CreatePRJ
         Me.ToolStripButton5.Image = Global.PENT.My.Resources.Resources._48px_Crystal_Clear_action_edit_add
         Me.ToolStripButton5.ImageTransparentColor = System.Drawing.Color.Black
         Me.ToolStripButton5.Name = "ToolStripButton5"
-        Me.ToolStripButton5.Size = New System.Drawing.Size(51, 22)
+        Me.ToolStripButton5.Size = New System.Drawing.Size(48, 22)
         Me.ToolStripButton5.Text = "New"
         '
         'ToolStripButton7
@@ -196,7 +197,7 @@ Partial Class CreatePRJ
         Me.ToolStripButton7.Image = Global.PENT.My.Resources.Resources._126_Edit_32x42_72
         Me.ToolStripButton7.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButton7.Name = "ToolStripButton7"
-        Me.ToolStripButton7.Size = New System.Drawing.Size(47, 22)
+        Me.ToolStripButton7.Size = New System.Drawing.Size(45, 22)
         Me.ToolStripButton7.Text = "Edit"
         '
         'ToolStripButton2
@@ -204,7 +205,7 @@ Partial Class CreatePRJ
         Me.ToolStripButton2.Image = Global.PENT.My.Resources.Resources._48px_Crystal_Clear_action_edit_remove
         Me.ToolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButton2.Name = "ToolStripButton2"
-        Me.ToolStripButton2.Size = New System.Drawing.Size(44, 22)
+        Me.ToolStripButton2.Size = New System.Drawing.Size(42, 22)
         Me.ToolStripButton2.Text = "Del"
         '
         'ToolStripSeparator1
@@ -217,7 +218,7 @@ Partial Class CreatePRJ
         Me.ToolStripButton6.Image = Global.PENT.My.Resources.Resources._48px_Crystal_Clear_mimetype_applix
         Me.ToolStripButton6.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButton6.Name = "ToolStripButton6"
-        Me.ToolStripButton6.Size = New System.Drawing.Size(109, 22)
+        Me.ToolStripButton6.Size = New System.Drawing.Size(98, 22)
         Me.ToolStripButton6.Text = "Raw Command"
         '
         'ToolStripButton10
@@ -225,7 +226,7 @@ Partial Class CreatePRJ
         Me.ToolStripButton10.Image = Global.PENT.My.Resources.Resources._48px_Crystal_Clear_filesystem_folder_blue
         Me.ToolStripButton10.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButton10.Name = "ToolStripButton10"
-        Me.ToolStripButton10.Size = New System.Drawing.Size(92, 22)
+        Me.ToolStripButton10.Size = New System.Drawing.Size(86, 22)
         Me.ToolStripButton10.Text = "Open Folder"
         '
         'ToolStripContainer2
@@ -235,12 +236,12 @@ Partial Class CreatePRJ
         'ToolStripContainer2.ContentPanel
         '
         Me.ToolStripContainer2.ContentPanel.Controls.Add(Me.ToolStripContainer4)
-        Me.ToolStripContainer2.ContentPanel.Size = New System.Drawing.Size(611, 304)
+        Me.ToolStripContainer2.ContentPanel.Size = New System.Drawing.Size(674, 399)
         Me.ToolStripContainer2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ToolStripContainer2.Location = New System.Drawing.Point(0, 0)
         Me.ToolStripContainer2.Name = "ToolStripContainer2"
         Me.ToolStripContainer2.RightToolStripPanelVisible = False
-        Me.ToolStripContainer2.Size = New System.Drawing.Size(611, 304)
+        Me.ToolStripContainer2.Size = New System.Drawing.Size(674, 399)
         Me.ToolStripContainer2.TabIndex = 0
         Me.ToolStripContainer2.Text = "ToolStripContainer2"
         Me.ToolStripContainer2.TopToolStripPanelVisible = False
@@ -251,11 +252,11 @@ Partial Class CreatePRJ
         'ToolStripContainer4.ContentPanel
         '
         Me.ToolStripContainer4.ContentPanel.Controls.Add(Me.ListView1)
-        Me.ToolStripContainer4.ContentPanel.Size = New System.Drawing.Size(611, 279)
+        Me.ToolStripContainer4.ContentPanel.Size = New System.Drawing.Size(674, 374)
         Me.ToolStripContainer4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ToolStripContainer4.Location = New System.Drawing.Point(0, 0)
         Me.ToolStripContainer4.Name = "ToolStripContainer4"
-        Me.ToolStripContainer4.Size = New System.Drawing.Size(611, 304)
+        Me.ToolStripContainer4.Size = New System.Drawing.Size(674, 399)
         Me.ToolStripContainer4.TabIndex = 1
         Me.ToolStripContainer4.Text = "ToolStripContainer4"
         '
@@ -265,11 +266,16 @@ Partial Class CreatePRJ
         '
         'ListView1
         '
+        Me.ListView1.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.ListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.OS, Me.State, Me.Type, Me.PName, Me.LevelNew, Me.Parameter, Me.ColumnHeader1})
         Me.ListView1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.ListView1.FullRowSelect = True
+        Me.ListView1.GridLines = True
+        Me.ListView1.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable
+        Me.ListView1.HideSelection = False
         Me.ListView1.Location = New System.Drawing.Point(0, 0)
         Me.ListView1.Name = "ListView1"
-        Me.ListView1.Size = New System.Drawing.Size(611, 279)
+        Me.ListView1.Size = New System.Drawing.Size(674, 374)
         Me.ListView1.TabIndex = 0
         Me.ListView1.UseCompatibleStateImageBehavior = False
         Me.ListView1.View = System.Windows.Forms.View.Details
@@ -292,7 +298,7 @@ Partial Class CreatePRJ
         'PName
         '
         Me.PName.Text = "Name"
-        Me.PName.Width = 150
+        Me.PName.Width = 116
         '
         'LevelNew
         '
@@ -307,6 +313,7 @@ Partial Class CreatePRJ
         'ColumnHeader1
         '
         Me.ColumnHeader1.Text = "SwitchNum"
+        Me.ColumnHeader1.Width = 71
         '
         'ToolStrip2
         '
@@ -316,7 +323,7 @@ Partial Class CreatePRJ
         Me.ToolStrip2.Location = New System.Drawing.Point(0, 0)
         Me.ToolStrip2.Name = "ToolStrip2"
         Me.ToolStrip2.RenderMode = System.Windows.Forms.ToolStripRenderMode.System
-        Me.ToolStrip2.Size = New System.Drawing.Size(611, 25)
+        Me.ToolStrip2.Size = New System.Drawing.Size(674, 25)
         Me.ToolStrip2.Stretch = True
         Me.ToolStrip2.TabIndex = 0
         '
@@ -325,7 +332,7 @@ Partial Class CreatePRJ
         Me.ToolStripButton8.Image = Global.PENT.My.Resources.Resources._120px_Nuvola_apps_download_manager2_svg
         Me.ToolStripButton8.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButton8.Name = "ToolStripButton8"
-        Me.ToolStripButton8.Size = New System.Drawing.Size(85, 22)
+        Me.ToolStripButton8.Size = New System.Drawing.Size(78, 22)
         Me.ToolStripButton8.Text = "Nach oben"
         '
         'ToolStripButton9
@@ -333,7 +340,7 @@ Partial Class CreatePRJ
         Me.ToolStripButton9.Image = Global.PENT.My.Resources.Resources._120px_Nuvola_apps_download_manager
         Me.ToolStripButton9.ImageTransparentColor = System.Drawing.Color.White
         Me.ToolStripButton9.Name = "ToolStripButton9"
-        Me.ToolStripButton9.Size = New System.Drawing.Size(89, 22)
+        Me.ToolStripButton9.Size = New System.Drawing.Size(82, 22)
         Me.ToolStripButton9.Text = "Nach unten"
         '
         'ToolStripButton1
@@ -341,7 +348,7 @@ Partial Class CreatePRJ
         Me.ToolStripButton1.Image = Global.PENT.My.Resources.Resources._48px_Crystal_Clear_action_edit_remove
         Me.ToolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButton1.Name = "ToolStripButton1"
-        Me.ToolStripButton1.Size = New System.Drawing.Size(121, 22)
+        Me.ToolStripButton1.Size = New System.Drawing.Size(111, 22)
         Me.ToolStripButton1.Text = "Markierte löschen"
         '
         'ToolStripButton11
@@ -349,7 +356,7 @@ Partial Class CreatePRJ
         Me.ToolStripButton11.Image = Global.PENT.My.Resources.Resources._126_Edit_32x42_72
         Me.ToolStripButton11.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButton11.Name = "ToolStripButton11"
-        Me.ToolStripButton11.Size = New System.Drawing.Size(140, 22)
+        Me.ToolStripButton11.Size = New System.Drawing.Size(132, 22)
         Me.ToolStripButton11.Text = "Parameter bearbeiten"
         '
         'ToolStripButton12
@@ -357,7 +364,7 @@ Partial Class CreatePRJ
         Me.ToolStripButton12.Image = Global.PENT.My.Resources.Resources._48px_Crystal_Clear_action_run_svg
         Me.ToolStripButton12.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButton12.Name = "ToolStripButton12"
-        Me.ToolStripButton12.Size = New System.Drawing.Size(140, 22)
+        Me.ToolStripButton12.Size = New System.Drawing.Size(131, 22)
         Me.ToolStripButton12.Text = "Switch Nr. bearbeiten"
         '
         'ToolStripContainer5
@@ -366,11 +373,11 @@ Partial Class CreatePRJ
         'ToolStripContainer5.ContentPanel
         '
         Me.ToolStripContainer5.ContentPanel.Controls.Add(Me.RichTextBox1)
-        Me.ToolStripContainer5.ContentPanel.Size = New System.Drawing.Size(935, 141)
+        Me.ToolStripContainer5.ContentPanel.Size = New System.Drawing.Size(1015, 195)
         Me.ToolStripContainer5.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ToolStripContainer5.Location = New System.Drawing.Point(0, 0)
         Me.ToolStripContainer5.Name = "ToolStripContainer5"
-        Me.ToolStripContainer5.Size = New System.Drawing.Size(935, 166)
+        Me.ToolStripContainer5.Size = New System.Drawing.Size(1015, 220)
         Me.ToolStripContainer5.TabIndex = 1
         Me.ToolStripContainer5.Text = "ToolStripContainer5"
         '
@@ -390,7 +397,7 @@ Partial Class CreatePRJ
         Me.RichTextBox1.Location = New System.Drawing.Point(0, 0)
         Me.RichTextBox1.Name = "RichTextBox1"
         Me.RichTextBox1.ShowSelectionMargin = True
-        Me.RichTextBox1.Size = New System.Drawing.Size(935, 141)
+        Me.RichTextBox1.Size = New System.Drawing.Size(1015, 195)
         Me.RichTextBox1.TabIndex = 0
         Me.RichTextBox1.Text = ""
         '
@@ -402,7 +409,7 @@ Partial Class CreatePRJ
         Me.ToolStrip4.Location = New System.Drawing.Point(0, 0)
         Me.ToolStrip4.Name = "ToolStrip4"
         Me.ToolStrip4.RenderMode = System.Windows.Forms.ToolStripRenderMode.System
-        Me.ToolStrip4.Size = New System.Drawing.Size(935, 25)
+        Me.ToolStrip4.Size = New System.Drawing.Size(1015, 25)
         Me.ToolStrip4.Stretch = True
         Me.ToolStrip4.TabIndex = 0
         '
@@ -411,7 +418,7 @@ Partial Class CreatePRJ
         Me.ToolStripButton3.Image = Global.PENT.My.Resources.Resources._64px_Nuvola_apps_cache_2_svg
         Me.ToolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButton3.Name = "ToolStripButton3"
-        Me.ToolStripButton3.Size = New System.Drawing.Size(128, 22)
+        Me.ToolStripButton3.Size = New System.Drawing.Size(119, 22)
         Me.ToolStripButton3.Text = "C-Code Generieren"
         '
         'ToolStripButton4
@@ -419,7 +426,7 @@ Partial Class CreatePRJ
         Me.ToolStripButton4.Image = Global.PENT.My.Resources.Resources._48px_Crystal_Clear_action_editpaste
         Me.ToolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButton4.Name = "ToolStripButton4"
-        Me.ToolStripButton4.Size = New System.Drawing.Size(175, 22)
+        Me.ToolStripButton4.Size = New System.Drawing.Size(159, 22)
         Me.ToolStripButton4.Text = "Kopieren in Zwischenablage"
         '
         'ToolStrip1
@@ -430,7 +437,7 @@ Partial Class CreatePRJ
         Me.ToolStrip1.Location = New System.Drawing.Point(0, 0)
         Me.ToolStrip1.Name = "ToolStrip1"
         Me.ToolStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System
-        Me.ToolStrip1.Size = New System.Drawing.Size(935, 25)
+        Me.ToolStrip1.Size = New System.Drawing.Size(1015, 25)
         Me.ToolStrip1.Stretch = True
         Me.ToolStrip1.TabIndex = 0
         '
@@ -491,7 +498,7 @@ Partial Class CreatePRJ
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(935, 499)
+        Me.ClientSize = New System.Drawing.Size(1015, 648)
         Me.Controls.Add(Me.ToolStripContainer1)
         Me.Name = "CreatePRJ"
         Me.Text = "Create Project"

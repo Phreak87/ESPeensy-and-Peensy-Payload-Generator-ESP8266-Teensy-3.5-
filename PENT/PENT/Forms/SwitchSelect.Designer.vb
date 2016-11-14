@@ -30,6 +30,8 @@ Partial Class SwitchSelect
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.BIN = New System.Windows.Forms.RadioButton()
+        Me.ABS = New System.Windows.Forms.RadioButton()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -38,7 +40,7 @@ Partial Class SwitchSelect
         Me.CheckBox1.AutoSize = True
         Me.CheckBox1.Checked = True
         Me.CheckBox1.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.CheckBox1.Location = New System.Drawing.Point(12, 26)
+        Me.CheckBox1.Location = New System.Drawing.Point(12, 25)
         Me.CheckBox1.Name = "CheckBox1"
         Me.CheckBox1.Size = New System.Drawing.Size(59, 17)
         Me.CheckBox1.TabIndex = 0
@@ -101,6 +103,8 @@ Partial Class SwitchSelect
         '
         'Panel1
         '
+        Me.Panel1.Controls.Add(Me.BIN)
+        Me.Panel1.Controls.Add(Me.ABS)
         Me.Panel1.Controls.Add(Me.Button2)
         Me.Panel1.Controls.Add(Me.Label2)
         Me.Panel1.Controls.Add(Me.Button1)
@@ -110,16 +114,39 @@ Partial Class SwitchSelect
         Me.Panel1.Enabled = False
         Me.Panel1.Location = New System.Drawing.Point(132, 12)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(173, 49)
+        Me.Panel1.Size = New System.Drawing.Size(173, 73)
         Me.Panel1.TabIndex = 11
+        '
+        'BIN
+        '
+        Me.BIN.AutoSize = True
+        Me.BIN.Location = New System.Drawing.Point(94, 42)
+        Me.BIN.Name = "BIN"
+        Me.BIN.Size = New System.Drawing.Size(54, 17)
+        Me.BIN.TabIndex = 12
+        Me.BIN.Text = "Binary"
+        Me.BIN.UseVisualStyleBackColor = True
+        '
+        'ABS
+        '
+        Me.ABS.AutoSize = True
+        Me.ABS.Checked = True
+        Me.ABS.Location = New System.Drawing.Point(13, 42)
+        Me.ABS.Name = "ABS"
+        Me.ABS.Size = New System.Drawing.Size(66, 17)
+        Me.ABS.TabIndex = 11
+        Me.ABS.TabStop = True
+        Me.ABS.Text = "Absolute"
+        Me.ABS.UseVisualStyleBackColor = True
         '
         'SwitchSelect
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(317, 73)
+        Me.ClientSize = New System.Drawing.Size(317, 97)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.CheckBox1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "SwitchSelect"
         Me.Text = "SwitchSelect"
         Me.Panel1.ResumeLayout(False)
@@ -136,4 +163,6 @@ Partial Class SwitchSelect
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
+    Friend WithEvents BIN As System.Windows.Forms.RadioButton
+    Friend WithEvents ABS As System.Windows.Forms.RadioButton
 End Class

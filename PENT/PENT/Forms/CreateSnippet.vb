@@ -12,7 +12,7 @@
         If CBO_Script.Text = "CSource" Then
             Dim CCont As String = RichTextBox1.Text
             Dim CContL0 As String = Split(CCont, vbLf)(0)
-            Dim CFuncts As System.Text.RegularExpressions.Match = System.Text.RegularExpressions.Regex.Match(CContL0, "void ([a-zA-Z_]*)\((.*?)\)")
+            Dim CFuncts As System.Text.RegularExpressions.Match = System.Text.RegularExpressions.Regex.Match(CContL0, "void ([a-zA-Z_]*)[ ]?\((.*?)\)")
             If CFuncts.Groups(1).Value <> "" Then SCR_Name = CFuncts.Groups(1).Value
         End If
 
