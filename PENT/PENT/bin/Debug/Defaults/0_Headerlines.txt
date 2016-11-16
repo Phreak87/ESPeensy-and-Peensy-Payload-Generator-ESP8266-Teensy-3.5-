@@ -1,4 +1,7 @@
 ﻿#include <usb_private.h>
+#include <SD.h>
+#include <SPI.h>
+
 const int led_pin = 11; 
 int summe;
 

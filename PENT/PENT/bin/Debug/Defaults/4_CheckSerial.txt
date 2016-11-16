@@ -1,16 +1,16 @@
-void CheckSerial (void){
+void CheckSerial (String line){
 	// hole Zeilenweise Daten aus Serial1 (ESP8266-E1)
 	// Zeile übertragen
 	
 	// Zeile auswerten
 	if (line.startsWith("RAW") == true){
-		keyboard.print (line.substr(4));
+		Keyboard.print (line.substring(4));
 	};
 	if (line.startsWith("FIL") == true){
-		StartFromSD (line.substr(4));
+		StartFromSD (line.substring(4));
 	};
 	if (line.startsWith("DUC") == true){
-		RunDuckyLine (line.substr(4));
+		RunDuckyLine (line.substring(4));
 	};
 	if (line.startsWith("GET") == true){
 		// Dateien der SD ausgeben

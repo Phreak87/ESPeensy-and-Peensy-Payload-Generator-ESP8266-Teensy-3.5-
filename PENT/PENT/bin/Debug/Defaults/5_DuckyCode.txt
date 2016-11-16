@@ -1,11 +1,102 @@
-void RunDuckyLine (String line){
-	if (line.startsWith("STRING-ENTER") == true){
-		Keyboard.print (line.substring(13));
-		Keyboard.set_key1(KEY_ENTER);
-		Keyboard.send_now();
-		unpress_key();
-	}
-	if (line.startsWith("STRING") == true){
-		Keyboard.print (line.substring(7));
-	}
-}
+
+void RunDuckyLine(String line) {
+
+  if (line.startsWith("ALT")) {    
+    Keyboard.set_modifier(MODIFIERKEY_ALT);
+    keys(line.substring(4));
+    Keyboard.send_now();
+    unpress_key();
+  }
+
+  if (line.startsWith("CTRL")) {
+    Keyboard.set_modifier(MODIFIERKEY_CTRL);
+    keys(line.substring(5));
+    Keyboard.send_now();
+    unpress_key();
+  }
+  
+  if (line.startsWith("CONTROL")) {
+    Keyboard.set_modifier(MODIFIERKEY_CTRL);
+    keys(line.substring(8));
+    Keyboard.send_now();
+    unpress_key();
+  }
+  
+  if (line.startsWith("SHIFT")) {
+    Keyboard.set_modifier(MODIFIERKEY_SHIFT);
+    keys(line.substring(6));
+    Keyboard.send_now();
+    unpress_key();
+  }
+  
+  if (line.startsWith("WINDOWS")) {
+    Keyboard.set_modifier(MODIFIERKEY_GUI);
+    keys(line.substring(8));
+    Keyboard.send_now();
+    unpress_key();
+  }
+  
+    if (line.startsWith("MENU")) {
+    Keyboard.set_modifier(MODIFIERKEY_RIGHT_GUI);
+    keys(line.substring(5));
+    Keyboard.send_now();
+    unpress_key();
+  }
+  
+    if (line.startsWith("ENTER")) {
+    Keyboard.set_key1(KEY_ENTER);
+    keys(line.substring(6));
+    Keyboard.send_now();
+    unpress_key();
+  }
+  
+    if (line.startsWith("ALT-SHIFT")) {
+    Keyboard.set_modifier(MODIFIERKEY_ALT | MODIFIERKEY_SHIFT);
+    keys(line.substring(10));
+    Keyboard.send_now();
+    unpress_key();
+  }
+  
+  if (line.startsWith("CTRL-ALT")) {
+    Keyboard.set_modifier(MODIFIERKEY_CTRL | MODIFIERKEY_ALT);
+    keys(line.substring(9));
+    Keyboard.send_now();
+    unpress_key();
+  }
+  
+  if (line.startsWith("CTRL-SHIFT")) {
+    Keyboard.set_modifier(MODIFIERKEY_CTRL | MODIFIERKEY_SHIFT);
+    keys(line.substring(11));
+    Keyboard.send_now();
+    unpress_key();
+  }
+  
+  if (line.startsWith("DEFAULT_DELAY")) {
+    delay (500);
+  }
+  if (line.startsWith("DEFAULTDELAY")) {
+    delay (500);
+  }
+  
+  if (line.startsWith("DELAY")) {
+    delay (line.substring(6).toInt());
+  }
+  
+  if (line.startsWith("STRING")) {
+    Keyboard.print (line.substring(7));
+  }
+  
+  if (line.startsWith("STRING-ENTER")) {
+    Keyboard.print (line.substring(13));
+    Keyboard.set_key1(KEY_ENTER);
+    Keyboard.send_now();
+    unpress_key();
+  }
+  
+  if (line.startsWith("DOWNARROW")) {
+    Keyboard.set_key1(KEY_DOWN);
+    Keyboard.send_now();
+    delay (line.substring(10).toInt());
+    unpress_key();
+  }
+} 
