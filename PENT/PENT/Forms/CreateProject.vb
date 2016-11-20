@@ -277,7 +277,16 @@
         Next
         For Each eintrag In VAR : Out.Replace(eintrag.Key, eintrag.Value) : Next
 
-        Out.AppendLine("void loop (){}")
+        Out.AppendLine("    String line = Serial1.readStringUntil('\r');")
+        Out.AppendLine("if (line.length() > 5){")
+        Out.AppendLine("if (line.startsWith (""/DCL"")){")
+        Out.AppendLine("RunDuckyLine (line.replace(""/DCL?PAR="","""").replace(""&STR="","" ""));")
+        Out.AppendLine("}")
+        Out.AppendLine("if (line.startsWith (""/DCF"")){")
+        Out.AppendLine("StartFromSD (line.replace(""/DCF?PAR=SD_FILE"","""").replace("" & Str() = "",""""));")
+        Out.AppendLine("}")
+        Out.AppendLine("Keyboard.print (line);")
+        Out.AppendLine("}")
         My.Computer.Clipboard.SetText(Out.ToString) : RichTextBox1.Text = Out.ToString
     End Sub
 
