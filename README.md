@@ -7,8 +7,8 @@ flexible penetration tests very easy without programming knowledge.
 
 ![alt text](https://github.com/Phreak87/Teensy-Payload-Generator/blob/master/Penteset.JPG "Logo Title Text 1")
 ![alt text](https://github.com/Phreak87/Teensy-Payload-Generator/blob/master/Snippet.JPG "Logo Title Text 1")
-![alt text](https://github.com/Phreak87/Teensy-Payload-Generator/blob/master/front.JPG "Logo Title Text 1")
-![alt text](https://github.com/Phreak87/Teensy-Payload-Generator/blob/master/back.JPG "Logo Title Text 1")
+![alt text](https://github.com/Phreak87/Teensy-Payload-Generator/blob/master/front.jpg "Logo Title Text 1")
+![alt text](https://github.com/Phreak87/Teensy-Payload-Generator/blob/master/back.jpg "Logo Title Text 1")
 
 ## DIP-Switches addition
 if you got an DIP-switch connected to A0-A3 you can choose between 2 different functions:
