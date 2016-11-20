@@ -7,6 +7,8 @@ flexible penetration tests very easy without programming knowledge.
 
 ![alt text](https://github.com/Phreak87/Teensy-Payload-Generator/blob/master/Penteset.JPG "Logo Title Text 1")
 ![alt text](https://github.com/Phreak87/Teensy-Payload-Generator/blob/master/Snippet.JPG "Logo Title Text 1")
+![alt text](https://github.com/Phreak87/Teensy-Payload-Generator/blob/master/front.JPG "Logo Title Text 1")
+![alt text](https://github.com/Phreak87/Teensy-Payload-Generator/blob/master/back.JPG "Logo Title Text 1")
 
 ## DIP-Switches addition
 if you got an DIP-switch connected to A0-A3 you can choose between 2 different functions:
@@ -18,14 +20,12 @@ if you got an SD-Card inserted, you can start a Duckyscript directly from the SD
 Simply add StartFromSD with the Filename as parameter and you done! 
 You can add a switch-position too if you like to start from SDCard only if a specific switch postition is set.
 
-## ReadFromSerial (Future)
-connect a mobile device or computer via wifi or bluetooth to the ESP8266 or ESP32.
+## ReadFromSerial
+connect a mobile device or computer via wifi or bluetooth to the ESP8266-12E / 1E or ESP32.
 open the internet page of the ESP and select a command and text or file to execute.
 the selected command will be send over serial to the teensy: the following commands are possible:
-RAW: Keyboard writes raw content
 FIL: Executes a Ducky-file from the sd-card
 DUC: Executes a single Ducky-command
-GET: Sends the Filenames on the SDCard to ESP for file selection.
 
 ## Keylogger (Future)
 You can connect a Keyboard to Teensy and send the keypresses to the Target and save it on the SDCard too.
