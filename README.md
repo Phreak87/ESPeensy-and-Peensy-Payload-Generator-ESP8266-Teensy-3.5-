@@ -9,6 +9,7 @@ flexible penetration tests very easy without programming knowledge.
 ![alt text](https://github.com/Phreak87/Teensy-Payload-Generator/blob/master/Snippet.JPG "Logo Title Text 1")
 ![alt text](https://github.com/Phreak87/Teensy-Payload-Generator/blob/master/front.jpg "Logo Title Text 1")
 ![alt text](https://github.com/Phreak87/Teensy-Payload-Generator/blob/master/back.jpg "Logo Title Text 1")
+![alt text](https://github.com/Phreak87/Teensy-Payload-Generator/blob/master/Webinterface.png "Logo Title Text 1")
 
 ## DIP-Switches addition
 If you got an 4 DIP-switch connected to A0-A3 you can choose between 2 different functions:
@@ -59,13 +60,13 @@ Example:
 > cscript Test.vbs
 
 ## Batch-Script
-> Copy any Batchfile-content to a new snippet and let it convert to C-Code.
-> Each line of the Batch will be executed as a single command. 
-> The snippet automatically masks critical characters too.
+Copy any Batchfile-content to a new snippet and let it convert to C-Code.
+Each line of the Batch will be executed as a single command. 
+The snippet automatically masks critical characters too.
 
 ## C-Code
-> Write down your own c-code.
-> C-code can be:
-> a complete function (with Parameters) 
-> or just commands. If you just enter commands the snippet will generate a function for these lines
-> and call the function.
+Write down your own c-code.
+C-code can be:
+a complete function (with Parameters) 
+or just commands. If you just enter commands the snippet will generate a function for these lines
+and call the function.
