@@ -10,6 +10,20 @@ flexible penetration tests very easy without programming knowledge.
 ![alt text](https://github.com/Phreak87/Teensy-Payload-Generator/blob/master/front.jpg "Logo Title Text 1")
 ![alt text](https://github.com/Phreak87/Teensy-Payload-Generator/blob/master/back.jpg "Logo Title Text 1")
 ![alt text](https://github.com/Phreak87/Teensy-Payload-Generator/blob/master/Webinterface.png "Logo Title Text 1")
+![alt text](https://github.com/Phreak87/Teensy-Payload-Generator/blob/master/Verschaltung.jpg "Logo Title Text 1")
+
+## Install procedure
+1. Solder all needed DIP-switches and ESP8266-12E to the Teensy board like described in the last picture
+2. Download Arduino Studio 
+3. Add ESP8266 from Arduino librarys
+4. Download latest Teensy librarys and run setup procedure.
+5. Open Arduino Studio and select hardware: Teensy 3.5 / USB-Type: Serial. Then copy and paste the content of Teensy_as_Flasher.txt to the source-code section of Arduino Studio,
+   plug in your teensy and press upload. Write down the shown Com-Port if driver finished installing. 
+6. Now copy and paste ESP_V2.txt to Arduino Studio and Select Hardware: ESP8266 / Serial-Port (from driver installation above). Remove the Teensy and remember the USB Port. 
+   Now *read my lips* press and HOLD the soldered flash button while plugging in Teensy into the SAME USB Port you used before. Release the flash button and click upload.
+7. Back to Arduino Studio again and choose Board: Teensy 3.5 / USB-Type: KEYBOARD. Run Peensy-Payload-Generator to generate and export your own C-Code.
+8. Copy and Paste C-Code from Teensy-Payload-Generator to Arduino Studio and Flash Teensy again.
+9. Happy Pentesting ;)
 
 ## DIP-Switches addition
 If you got an 4 DIP-switch connected to A0-A3 you can choose between 2 different functions:
