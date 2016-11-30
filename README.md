@@ -10,6 +10,9 @@ flexible penetration tests very easy without programming knowledge.
 ![alt text](https://github.com/Phreak87/Teensy-Payload-Generator/blob/master/front.jpg "Logo Title Text 1")
 ![alt text](https://github.com/Phreak87/Teensy-Payload-Generator/blob/master/back.jpg "Logo Title Text 1")
 ![alt text](https://github.com/Phreak87/Teensy-Payload-Generator/blob/master/Webinterface.png "Logo Title Text 1")
+![alt text](https://github.com/Phreak87/Teensy-Payload-Generator/blob/master/Wifi.png "Logo Title Text 1")
+![alt text](https://github.com/Phreak87/Teensy-Payload-Generator/blob/master/FileUpload.png "Logo Title Text 1")
+![alt text](https://github.com/Phreak87/Teensy-Payload-Generator/blob/master/Firmware.png "Logo Title Text 1")
 ![alt text](https://github.com/Phreak87/Teensy-Payload-Generator/blob/master/Verschaltung.jpg "Logo Title Text 1")
 
 ## Install procedure

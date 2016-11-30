@@ -35,12 +35,12 @@ void loop() {
         LED_15_TimeOn = millis();
         Serial1.write( Serial.read() );
     }
-
-    if (millis() - LED_14_TimeOn > 20) {
-	digitalWriteFast(14, LOW);   // set the LED off
-	}
-    if (millis() - LED_15_TimeOn > 20) {
-	digitalWriteFast(15, LOW);   // set the LED off
-	}
+	
+		if (millis() - LED_14_TimeOn > 20) {
+		digitalWriteFast(14, LOW);   // set the LED off
+		}
+		if (millis() - LED_15_TimeOn > 20) {
+		digitalWriteFast(15, LOW);   // set the LED off
+		}
 
 }

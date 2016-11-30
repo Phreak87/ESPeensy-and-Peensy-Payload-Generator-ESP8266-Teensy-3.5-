@@ -1,0 +1,17 @@
+﻿Content += "<div><h4>ESP8266 Status</h4>";
+Content += "<table><tr><th><a href='restart'>Restart ESP8266</a></th></tr></table></div><div><h4>ESPeensy Status</h4><table><tr><th><a href='DCL?PAR=NUM'>NUM</a></th>";
+Content += "<th><a href='DCL?PAR=CAPS'>CAPS</a></th><th><a href='DCL?PAR=SCRL'>SCRL</a></th></tr></table></div><div><h4>ESPeensy Control Panel</h4>";
+Content += "<table><TR></TR><tr><form action='DCF'><td>Start Script</td><td colspan=2><select  Style='Height:32px;' name='PAR'><option value='1.txt'>1.txt</option>";
+Content += "<option value='2.txt'>2.txt</option><option value='3.txt'>3.txt</option><option value='4.txt'>4.txt</option><option value='5.txt'>5.txt</option>";
+Content += "<option value='6.txt'>6.txt</option><option value='7.txt'>7.txt</option><option value='8.txt'>8.txt</option><option value='9.txt'>9.txt</option>";
+Content += "<option value='10.txt'>10.txt</option><option value='11.txt'>11.txt</option><option value='12.txt'>12.txt</option><option value='13.txt'>13.txt</option>";
+Content += "<option value='14.txt'>14.txt</option><option value='15.txt'>15.txt</option><option value='16.txt'>16.txt</option></select>";
+Content += "</td><td><button type='submit'>Go!</button></td></form></tr><tr><form action='DCL'><td>Send String</td><td><select  Style='Height:32px;' name='PAR'>";
+Content += "<option value='STRING'>STRING</option><option value='STRING-ENTER'>STRING-ENTER</option></select></td><td><input type='text' name='STR'></input></td>";
+Content += "<td><button type='submit'>Go!</button></td></form></tr><tr><form action='DCC'><td>Send Command</td><td><select  Style='Height:32px;' name='PAR'>";
+Content += "<option value='ALT'>ALT</option><option value='CTRL'>CTRL</option><option value='SHIFT'>SHIFT</option><option value='COMMAND'>COMMAND</option>";
+Content += "<option value='WINDOWS'>WINDOWS</option><option value='ENTER'>ENTER</option><option value='MENU'>MENU</option><option value='TAB'>TAB</option>";
+Content += "<option value='ALT-SHIFT'>ALT-SHIFT</option><option value='CTRL-ALT'>CTRL-ALT</option><option value='CTRL-SHIFT'>CTRL-SHIFT</option>";
+Content += "<option value='CTRL-ESC'>CTRL-ESC</option><option value='DOWNARROW'>DOWNARROW</option><option value='UPARROW'>UPARROW</option>";
+Content += "<option value='LEFTARROW'>LEFTARROW</option><option value='RIGHTARROW'>RIGHTARROW</option></select></td><td><input type='text' name='STR'></input></td>";
+Content += "<td><button type='submit'>Go!</button></td></form></tr></table></div>By Phreak87 & Roctopuschl</body></html>";

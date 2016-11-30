@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESPeensy Control Panel</title>
+	 <STYLE>
+		* 					{font-family:verdana;font-size:14px;border-radius:3px;Margin:3px;Padding:2px;}
+		div 				{Border:1px solid grey;Margin-Bottom:7px;background-color:#E6E6E6;}
+		h4 					{Margin-Top:-2px;Margin-Left:-2px;Margin-Right:-2px;Padding:3px;background-color:#BDBDBD;}
+		div>a				{font-family:verdana;font-size:16px;Color:White;}
+		div>a.Mark			{background-color:#E6E6E6;color:black}
+		Input,Select,Button	{Border:1px solid lightgrey;Height:30px;Width:99%;Margin:0px;Padding:0px}
+		Input:Hover,Select:Hover,Button:Hover,tr:hover			{box-shadow: 0 0 0 1px #0080FF inset}
+		table 				{Margin-Top:8px;width:99%;border-collapse:collapse;}
+		th 					{text-align:left;height:20px;}
+		td					{Padding-right:6px}		
+		tr:nth-child(even) 	{background-color: #D8D8D8;}
+		tr:first-child 		{box-shadow: 0 0 0 0px #0080FF inset}
+	</STYLE> 
+  </head>
+  
+  <body>
+	<DIV Style="background-color:#696969;Color:White;border-top: 2px solid blue;">
+		<a class="Mark" Href="/">Teensy Controls</a>
+		<a Href="wifi">Wifi Settings</a>
+		<a Href="fupload">File Manager</a>
+		<a Href="updatefwm">Firmware Manager</a>
+	</DIV>
+	  	<div>
+			<h4>ESP8266 Status</h4>
+			<table>
+				<tr><th><a href="restart">Restart ESP8266</a></th></tr>
+			</table>
+		</div>
+	  	<div>
+			<h4>ESPeensy Status</h4>
+			<table>
+				<tr>
+					<th><a href="DCL?PAR=NUM">NUM</a></th>					
+					<th><a href="DCL?PAR=CAPS">CAPS</a></th>					
+					<th><a href="DCL?PAR=SCRL">SCRL</a></th>					
+				</tr>
+			</table>
+		</div>
+		<div>
+			<h4>ESPeensy Control Panel</h4>
+			<table>
+				<TR></TR>
+				<tr>
+					<form action="DCF">
+						<td>Start Script</td>
+							<td colspan=2>
+								<select  Style="Height:32px;" name="PAR">
+									<option value="1.txt">1.txt</option>
+									<option value="2.txt">2.txt</option>
+									<option value="3.txt">3.txt</option>
+									<option value="4.txt">4.txt</option>
+									<option value="5.txt">5.txt</option>
+									<option value="6.txt">6.txt</option>
+									<option value="7.txt">7.txt</option>
+									<option value="8.txt">8.txt</option>
+									<option value="9.txt">9.txt</option>
+									<option value="10.txt">10.txt</option>
+									<option value="11.txt">11.txt</option>
+									<option value="12.txt">12.txt</option>
+									<option value="13.txt">13.txt</option>
+									<option value="14.txt">14.txt</option>
+									<option value="15.txt">15.txt</option>
+									<option value="16.txt">16.txt</option>
+								</select>
+							</td>
+						<td><button type="submit">Go!</button></td>
+					</form>
+				</tr>
+				<tr>
+					<form action="DCL">
+						<td>Send String</td>
+						<td>
+							<select  Style="Height:32px;" name="PAR">
+								<option value="STRING">STRING</option>
+								<option value="STRING-ENTER">STRING-ENTER</option>
+							</select>
+						</td>
+						<td><input type="text" name="STR"></input></td>
+						<td><button type="submit">Go!</button></td>
+					</form>
+				</tr>
+				<tr>
+					<form action="DCC">
+						<td>Send Command</td>
+						<td>
+							<select  Style="Height:32px;" name="PAR">
+								<option value="ALT">ALT</option>                                                             
+								<option value="CTRL">CTRL</option>
+								<option value="SHIFT">SHIFT</option>
+								<option value="COMMAND">COMMAND</option>
+								<option value="WINDOWS">WINDOWS</option>
+								<option value="ENTER">ENTER</option>
+								<option value="MENU">MENU</option>
+								<option value="TAB">TAB</option>
+								<option value="ALT-SHIFT">ALT-SHIFT</option>
+								<option value="CTRL-ALT">CTRL-ALT</option>
+								<option value="CTRL-SHIFT">CTRL-SHIFT</option>
+								<option value="CTRL-ESC">CTRL-ESC</option>
+								<option value="DOWNARROW">DOWNARROW</option>
+								<option value="UPARROW">UPARROW</option>
+								<option value="LEFTARROW">LEFTARROW</option>
+								<option value="RIGHTARROW">RIGHTARROW</option>
+							</select>
+						</td>
+						<td><input type="text" name="STR"></input></td>
+						<td><button type="submit">Go!</button></td>
+					</form>
+				</tr>
+			</table>
+		</div>
+		By Phreak87 & Roctopuschl
+		
+		
+		
+  </body>
+</html>

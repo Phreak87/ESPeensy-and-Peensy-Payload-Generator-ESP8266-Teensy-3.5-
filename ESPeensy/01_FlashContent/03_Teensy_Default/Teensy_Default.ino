@@ -9,6 +9,7 @@ int ledkeys(void)       {return int(keyboard_leds);}
 bool is_scroll_on(void) {return ((ledkeys() & 4) == 4) ? true : false;}
 bool is_caps_on(void)   {return ((ledkeys() & 2) == 2) ? true : false;}
 bool is_num_on(void)    {return ((ledkeys() & 1) == 1) ? true : false;}
+bool flashing = false;
 
 void unpress_key(void)
 {
@@ -203,7 +204,7 @@ void keys(String key) {
 } 
 
 void setup (void){
-  Serial.begin(9600);
+  Serial.begin(115200);
   Serial1.begin(115200);
   taster();
   blink_fast(20,80);
@@ -259,14 +260,27 @@ void StartFromSD (String Filename){
 }
 
 void loop (){
-    String line = Serial1.readStringUntil('\r');
-    if (line.length() > 5){
-      if (line.startsWith ("/DCL")){
-        RunDuckyLine (line.replace("/DCL?PAR=","").replace("&STR="," "));
+    // Send bytes from ESP8266 -> Teensy to Computer
+    if ( Serial1.available() ) {
+        Serial.write( Serial1.read() );
+    }
+
+    // Send bytes from Computer -> Teensy back to ESP8266
+    if ( Serial.available() ) {
+        Serial1.write( Serial.read() );
+        flashing == true;
+    }
+	
+    if (flashing == false){
+      String line = Serial1.readStringUntil('\r');
+      if (line.length() > 5){
+        if (line.startsWith ("/DCL")){
+          RunDuckyLine (line.replace("/DCL?PAR=","").replace("&STR="," "));
+        }
+        if (line.startsWith ("/DCF")){
+          StartFromSD (line.replace("/DCF?PAR=SD_FILE","").replace("&STR=",""));
+        }
+        Keyboard.print (line);
       }
-      if (line.startsWith ("/DCF")){
-        StartFromSD (line.replace("/DCF?PAR=SD_FILE","").replace("&STR=",""));
-      }
-      Keyboard.print (line);
     }
 }
