@@ -6,7 +6,7 @@ use this code for each other payload you generate. so you can build
 flexible penetration tests very easy without programming knowledge.
 
 ![alt text](https://github.com/Phreak87/Teensy-Payload-Generator/blob/master/Penteset.JPG "Logo Title Text 1")
-![alt text](https://github.com/Phreak87/Teensy-Payload-Generator/blob/master/Snippet.JPG "Logo Title Text 1")
+![alt text](https://github.com/Phreak87/Teensy-Payload-Generator/blob/master/Snippet.png "Logo Title Text 1")
 ![alt text](https://github.com/Phreak87/Teensy-Payload-Generator/blob/master/front.jpg "Logo Title Text 1")
 ![alt text](https://github.com/Phreak87/Teensy-Payload-Generator/blob/master/back.jpg "Logo Title Text 1")
 ![alt text](https://github.com/Phreak87/Teensy-Payload-Generator/blob/master/Webinterface.png "Logo Title Text 1")
