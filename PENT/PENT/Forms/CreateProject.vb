@@ -18,7 +18,7 @@
             LVIT.SubItems.Add(Splitter(3))
             LVIT.SubItems.Add(Splitter(4))
             LVIT.SubItems.Add(Splitter(5))  ' Parameter
-            LVIT.SubItems.Add(Splitter(6))  ' SwitchSel
+            'LVIT.SubItems.Add(Splitter(6))  ' SwitchSel
             ListView1.Items.Add(LVIT)
             UpdateState(Splitter(4))
         Next
